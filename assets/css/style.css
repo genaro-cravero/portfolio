@@ -53,8 +53,5 @@ img{
 .carousel {
     width:25%;
   }
-$('.carousel').carousel({
-    interval: false
-  });
-
-/*
+  /*
+  
