@@ -1,0 +1,60 @@
+/*FONDO*/
+body {
+    background: #630808;
+    background: -moz-linear-gradient(top, #630808 0%, #A40000 50%, #FF7A6B 100%);
+    background: -webkit-linear-gradient(top, #630808 0%, #A40000 50%, #FF7A6B 100%);
+    background: linear-gradient(to bottom, #630808 0%, #A40000 50%, #FF7A6B 100%);
+    }
+/*COLORES generales*/
+hr{
+    color: #b8860b;
+}
+p{
+    font-family: "Comic Sans MS", ""
+    color:#1d0030 ;
+}
+
+li{
+    font-family: "Comic Sans MS";
+    color:#1d0030;
+}
+.imgperfil {
+    width: 13%;
+    border-radius:35%;
+    border: 3px dashed #360258;
+    padding:1px;
+    }
+.logo{
+    width: 5%;
+    position: relative;
+    top: 0.80%; left: 49%;    
+}
+/*TABLAS*/
+table.gametable td {
+    border-top: 5px double #b8860b;
+    border-radius: 1%;
+    padding: 4px 7px;
+}
+.gametable{
+    font-family: "Comic Sans MS";
+    color: #fff;
+    background-color: #000000;
+    border-radius:3%;
+    border: 10px double #b8860b;
+    padding: 3px;
+}
+/* Gifs e imagenes*/
+img{
+    width:25%;
+}
+.slogo{
+    width:15%;
+}
+.carousel {
+    width:25%;
+  }
+$('.carousel').carousel({
+    interval: false
+  });
+
+/*
