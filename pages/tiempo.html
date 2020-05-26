@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Recurrente</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/styletiempo.css">
+</head>
+<body>
+    <h1 align=center>Cuadros de colores aleatorios</h1> <br> <h3 align=center>cada segundo, por 24 segundos</h3>
+    <div id="colorcito" style = "float: left"></div>
+    <div id="colorcito2" style = "float: left"></div>
+    <div id="colorcito3" style = "float: left"></div>
+    <div id="colorcito4"style = "float: left"></div>
+    <div id="colorcito5"style = "float: left"></div>
+    <div id="colorcito6"style = "float: left"></div>
+    <div id="colorcito7"style = "float: left"></div>
+    <div id="colorcito8"style = "float: left"></div>
+    <div id="colorcito9"style = "float: left"></div>
+    <div id="colorcito10"style = "float: left"></div>
+    <div id="colorcito11"style = "float: left"></div>
+    <div id="colorcito12"style = "float: left"></div>
+    <div id="colorcito13" style = "float: left"></div>
+    <div id="colorcito14" style = "float: left"></div>
+    <div id="colorcito15" style = "float: left"></div>
+    <div id="colorcito16"style = "float: left"></div>
+    <div id="colorcito17"style = "float: left"></div>
+    <div id="colorcito18"style = "float: left"></div>
+    <div id="colorcito19"style = "float: left"></div>
+    <div id="colorcito20"style = "float: left"></div>
+    <div id="colorcito21"style = "float: left"></div>
+    <div id="colorcito22"style = "float: left"></div>
+    <div id="colorcito23"style = "float: left"></div>
+    <div id="colorcito24"style = "float: left"></div>
+
+    <div class="boton"><button id="boton2"></button></div>
+    <script>
+        var intervalo = setInterval(mostrar, 1000); 
+        var contador = 0;
+        var colorcito = document.getElementById('colorcito');
+        var colorcito2 = document.getElementById('colorcito2');
+        var colorcito3 = document.getElementById('colorcito3');
+        var colorcito4 = document.getElementById('colorcito4');
+        var colorcito5 = document.getElementById('colorcito5');
+        var colorcito6 = document.getElementById('colorcito6');
+        var colorcito7 = document.getElementById('colorcito7');
+        var colorcito8 = document.getElementById('colorcito8');
+        var colorcito9 = document.getElementById('colorcito9');
+        var colorcito10 = document.getElementById('colorcito10');
+        var colorcito11 = document.getElementById('colorcito11');
+        var colorcito12 = document.getElementById('colorcito12');
+        var colorcito13 = document.getElementById('colorcito13');
+        var colorcito14 = document.getElementById('colorcito14');
+        var colorcito15 = document.getElementById('colorcito15');
+        var colorcito16 = document.getElementById('colorcito16');
+        var colorcito17 = document.getElementById('colorcito17');
+        var colorcito18 = document.getElementById('colorcito18');
+        var colorcito19 = document.getElementById('colorcito19');
+        var colorcito20 = document.getElementById('colorcito20');
+        var colorcito21 = document.getElementById('colorcito21');
+        var colorcito22 = document.getElementById('colorcito22');
+        var colorcito23 = document.getElementById('colorcito23');
+        var colorcito24 = document.getElementById('colorcito24');
+
+        var boton2 = document.getElementById('boton2');
+        boton2.style.display= 'none';
+
+        document.getElementById('boton2').innerHTML = "Reiniciar";
+        boton2.addEventListener('click', reiniciar);
+
+
+
+        function random(numero){
+            return Math.floor(Math.random() * numero+1)
+        };
+
+        
+        function mostrar(){
+            var colorRandom = 'rgb(' +random(255) + ',' +random(255) + ',' +random(255) +')';
+            if(contador == 1){
+                
+            colorcito.style.backgroundColor = colorRandom;
+            }else if(contador == 2){
+                
+                colorcito2.style.backgroundColor = colorRandom;
+                }else if(contador == 3){
+            
+                colorcito3.style.backgroundColor = colorRandom;
+                }else if(contador == 4){
+
+                colorcito4.style.backgroundColor = colorRandom;
+                }else if(contador == 5){
+                
+                colorcito5.style.backgroundColor = colorRandom;
+                }else if(contador == 6){
+                
+                colorcito6.style.backgroundColor = colorRandom;
+                }else if(contador == 7){
+                
+                colorcito7.style.backgroundColor = colorRandom;
+                } else if(contador == 8){
+                
+                colorcito8.style.backgroundColor = colorRandom;
+                }else if(contador == 9){
+                
+                colorcito9.style.backgroundColor = colorRandom;
+                }else if(contador == 10){
+                
+                colorcito10.style.backgroundColor = colorRandom;
+                }else if(contador == 11){
+                
+                colorcito11.style.backgroundColor = colorRandom;
+                }else if(contador == 12){
+                
+                colorcito12.style.backgroundColor = colorRandom;
+                } else if(contador == 13){
+                
+                colorcito13.style.backgroundColor = colorRandom;
+                }else if(contador == 14){
+            
+                colorcito14.style.backgroundColor = colorRandom;
+                }else if(contador == 15){
+
+                colorcito15.style.backgroundColor = colorRandom;
+                }else if(contador == 16){
+                
+                colorcito16.style.backgroundColor = colorRandom;
+                }else if(contador == 17){
+                
+                colorcito17.style.backgroundColor = colorRandom;
+                }else if(contador == 18){
+                
+                colorcito18.style.backgroundColor = colorRandom;
+                } else if(contador == 19){
+                
+                colorcito19.style.backgroundColor = colorRandom;
+                }else if(contador == 20){
+                
+                colorcito20.style.backgroundColor = colorRandom;
+                }else if(contador == 21){
+                
+                colorcito21.style.backgroundColor = colorRandom;
+                }else if(contador == 22){
+                
+                colorcito22.style.backgroundColor = colorRandom;
+                }else if(contador == 23){
+                
+                colorcito23.style.backgroundColor = colorRandom;
+                } else if(contador == 24){
+                
+                colorcito24.style.backgroundColor = colorRandom;
+                } else if(contador == 25){
+                    document.body.style.backgroundColor = colorRandom
+                };
+
+                if(contador >= 26){
+                    alert("se acabaron los colores :(");
+                    clearInterval(intervalo);
+                    boton2.style.display = null;
+                };
+             
+           
+            
+            contador++;
+            console.log(contador);
+            
+        };
+       
+        
+       function reiniciar(){
+        window.location.reload(false); 
+       };
+
+
+
+        
+
+    </script>
+</body>
+</html>

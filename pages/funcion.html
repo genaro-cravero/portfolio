@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Función Propia</title>
+    <link rel="stylesheet" type=text/css href="../assets/css/stylefunction.css">
+</head>
+<body>
+
+    <h1 align=center>Clickeo rápido</h1> <br> <h3 align=center>Clickea lo más rápido que puedas en 10 segundos.</h3>
+    <br><br>
+    
+    <div class="boton"><button id="boton1"></button></div>
+    <p id="texto"align=center>0 Clicks</p>
+    <p id="regresiva"align=center>10 Segundos restantes</p>
+    <div class="boton"><button id="boton2"></button></div>
+
+    <script>
+
+
+        alert("clickea lo más rápido que puedas, buena suerte.");
+
+        var boton1 = document.getElementById('boton1');
+        var boton2 = document.getElementById('boton2');
+        var cuentaClicks = 0;
+        var Intervalo = setInterval(CuentaR, 1000);
+        var segundos = 11;
+        var texto = document.getElementById('texto').innerHTML = "0 Clicks";
+        boton2.style.display= 'none';
+
+
+        
+        document.getElementById('boton1').innerHTML = "Clickea aquí";
+        document.getElementById('boton2').innerHTML = "Reiniciar";
+
+        boton1.addEventListener('click', contador);
+        boton2.addEventListener('click', reiniciar);
+        function contador (){
+            cuentaClicks = cuentaClicks + 1;
+            document.getElementById('texto').innerHTML = cuentaClicks + " Clicks"; 
+            
+
+
+        };
+
+       function CuentaR(){
+            segundos--;
+            document.getElementById('regresiva').innerHTML = segundos + " Segundos restantes";
+            if(segundos == 0){
+                alert("Has hecho "+ cuentaClicks+ " clicks en 10 segundos" );
+                clearInterval(Intervalo);
+                boton1.style.display = 'none';
+                document.getElementById('regresiva').innerHTML = " Se acabó el tiempo :c";
+                boton2.style.display = null;
+                document.getElementById('texto').innerHTML ="Clicks totales: " + cuentaClicks; 
+            };
+       };
+
+       function reiniciar(){
+        window.location.reload(false); 
+       };
+
+
+
+
+    </script>
+
+
+</body>
+</html>

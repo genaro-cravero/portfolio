@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reacción al teclado</title>
+    <link rel="stylesheet" type=text/css href="../assets/css/styleteclas.css">
+</head>
+<body>
+
+    <!-- Imágenes cargadas -->
+    <h1 align="center"><marquee scrolldelay= "50" truespeed=true behavior= alternate>Pulse una letra</marquee></h1>
+    <p id="texto" align="center"></p>
+    <div id="foto" align="center"></div>
+   
+
+    <script>      
+        var num = "";
+        var texto = document.getElementById('texto');
+        texto = "";
+        document.addEventListener('keydown', teclaPresionada, true);
+
+            
+        
+        //Funcion de tecla, imagenes y texto
+        
+        function teclaPresionada(key){
+            if (key.keyCode == "65"){
+                num = 1;
+                document.getElementById('texto').innerHTML='Ardilla';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "66"){
+                num = 2;
+                document.getElementById('texto').innerHTML='Ballena';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "67"){
+                num = 3;
+                document.getElementById('texto').innerHTML='Cocodrilo';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "68"){
+                num = 4;
+                document.getElementById('texto').innerHTML='Delfín';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "69"){
+                num = 5;
+                document.getElementById('texto').innerHTML='Elefante';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "70"){
+                num = 6;
+                document.getElementById('texto').innerHTML='Flamenco';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "71"){
+                num = 7;
+                document.getElementById('texto').innerHTML='Gato';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "72"){
+                num = 8;
+                document.getElementById('texto').innerHTML='Hipopotamo';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "73"){
+                num = 9;
+                document.getElementById('texto').innerHTML='Iguana';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "74"){
+                num = 10;
+                document.getElementById('texto').innerHTML='Jirafa';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "75"){
+                num = 11;
+                document.getElementById('texto').innerHTML='Koala';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "76"){
+                num = 12;
+                document.getElementById('texto').innerHTML='Langosta';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "77"){
+                num = 13;
+                document.getElementById('texto').innerHTML='Mono';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "78"){
+                num = 14;
+                document.getElementById('texto').innerHTML='Nutria';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "192"){
+                num = 15;
+                document.getElementById('texto').innerHTML='Ñandú';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "79"){
+                num = 16;
+                document.getElementById('texto').innerHTML='Oso';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "80"){
+                num = 17;
+                document.getElementById('texto').innerHTML='Pingüino';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "81"){
+                num = 18;
+                document.getElementById('texto').innerHTML='Quirquincho';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "82"){
+                num = 19;
+                document.getElementById('texto').innerHTML='Rana';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "83"){
+                num = 20;
+                document.getElementById('texto').innerHTML= 'Serpiente';         
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "84"){
+                num = 21;
+                document.getElementById('texto').innerHTML='Tortuga';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "85"){
+                num = 22;
+                document.getElementById('texto').innerHTML='Urraca';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "86"){
+                num = 23;
+                document.getElementById('texto').innerHTML='Vaca';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "87"){
+                num = 24;
+                document.getElementById('texto').innerHTML='Wallaby';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "88"){
+                num = 25;
+                document.getElementById('texto').innerHTML='Xilófono';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "89"){
+                num = 26;
+                document.getElementById('texto').innerHTML='Yaguareté';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+            if (key.keyCode == "90"){
+                num = 27;
+                document.getElementById('texto').innerHTML='Zorro';
+                document.getElementById('foto').innerHTML='<img src="../images/tp2/keyboard/'+num+'.png">';
+            };
+
+            
+                
+           
+        };
+       
+    
+        
+    </script>
+    
+</body>
+</html>

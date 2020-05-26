@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <div id="test"></div>
+    <button id="boton">Comprobar</button>
+    <div id="resultado"></div>
+    
+    <script> 
+        document.body.style.background = 'rgb(190,188,177)';
+        
+        const contenedor = document.getElementById('test');
+        const boton_res = document.getElementById('boton');
+        const resultadoTest = document.getElementById('resultado');
+
+        //preguntas, opciones y respuestas
+        var preguntas = [
+            {
+                pregunta: "¿Cuánto es 2 + 2?",
+                respuestas:{
+                    a: "5",
+                    b: "22",
+                    c: "Error",
+                    d: "4",
+                },
+                rcorrecta: "d",
+            },
+            {
+                pregunta: "¿Cuál de los siguientes no pertenece?",
+                respuestas:{
+                    a: "Carlitos Balá",
+                    b: "Spiderman",
+                    c: "El tio Ben",
+                    d: "El amigo de Spiderman",
+                    e: "Peter Parker",
+                },
+                rcorrecta: "a",
+            },
+            {
+                pregunta: "¿Quién programó esta web de trivias?",
+                respuestas:{
+                    a: "Bruce Wayne",
+                    b: "Luke Skywalker",
+                    c: "El señor del kiosko",
+                    d: "Nadie, ya estaba así desde el inicio de los tiempos",
+                    e: "Genaro Nicolás Cravero",
+                },
+                rcorrecta: "e",
+            },
+            {
+                pregunta: "¿Cómo se llama la mascota de Mickey Mouse?",
+                respuestas:{
+                    a: "Garfio",
+                    b: "Pluto",
+                    c: "No tiene mascotas",
+                    d: "Mickey es la mascota",
+                },
+                rcorrecta: "b",
+            },
+            {
+                pregunta: "¿Cuáles son los colores primarios?",
+                respuestas:{
+                    a: "Rojo, rojo claro y rojo oscuro",
+                    b: "Verde, rosado y violeta",
+                    c: "Azul, rojo y amarillo",
+                    d: "No existen",
+                },
+                rcorrecta: "c",
+            },
+           
+        ];   
+            // Mostrar Preguntas Y respuestas con los input
+        function mostrarTest(){
+            const PyR = [];
+            preguntas.forEach((preguntaActual, Npregunta)=>{
+                const respuestas = [];
+                
+                for(letraRespuesta in preguntaActual.respuestas){
+                    respuestas.push(
+                        `<label>
+                            <input type="radio" name="${Npregunta}" value="${letraRespuesta}">
+                            ${letraRespuesta} : ${preguntaActual.respuestas[letraRespuesta]} <br>
+                        </label>`
+                    ); 
+                
+                };
+                PyR.push(
+                   `<div class= "cuestion"> ${preguntaActual.pregunta} </div>
+                   <div class= "respuestas"> ${respuestas.join('')}</div>`
+                );
+            });
+            contenedor.innerHTML = PyR.join('');
+        }
+        mostrarTest();
+        
+        // Calcula y muestra el resultado
+        function mresultado(){
+            const respuestas = contenedor.querySelectorAll(".respuestas");
+            let RespuestasC = 0;
+
+            preguntas.forEach((preguntaActual, Npregunta) => {
+                const todaslasRespuestas = respuestas[Npregunta];
+                const check = `input[name='${Npregunta}']:checked`;
+                const respuestaElegida = (todaslasRespuestas.querySelector(check) || {}).value; 
+
+                if(respuestaElegida === preguntaActual.rcorrecta){
+                    RespuestasC++;
+                    respuestas[Npregunta].style.color = 'green';
+                }else {
+                    respuestas[Npregunta].style.color = 'red';
+                };
+            });
+            // Mensaje final
+            if( RespuestasC === 0){
+                resultadoTest.innerHTML = alert("No acertaste ninguna respuesta :("+ "\n" + "Tu puntaje es " + RespuestasC + " / " +preguntas.length);
+                resultadoTest.innerHTML = "Reintentar ↑"
+
+            } else 
+                if( 0 < RespuestasC && RespuestasC < preguntas.length)
+                {
+                resultadoTest.innerHTML = alert("Respondiste bien " + RespuestasC + " de " + preguntas.length + " preguntas.");
+               
+                resultadoTest.innerHTML = ""
+                } else {
+                resultadoTest.innerHTML = alert("Felicidades, respondiste bien todas las preguntas." + "\n"+ RespuestasC + " / " +preguntas.length);
+                resultadoTest.innerHTML = ""
+            };
+            
+        };
+
+        boton_res.addEventListener('click', mresultado);
+        console.log("Apruébeme programación :)")
+    </script>
+
+</body>
+</html>

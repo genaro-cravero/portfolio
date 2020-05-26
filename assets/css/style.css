@@ -10,8 +10,8 @@ hr{
     color: #b8860b;
 }
 p{
-    font-family: "Comic Sans MS", ""
-    color:#1d0030 ;
+    font-family: "Comic Sans MS", "Arial", "Times New Roman";
+    color: #12011f ;
 }
 
 li{
@@ -21,7 +21,7 @@ li{
 .imgperfil {
     width: 13%;
     border-radius:35%;
-    border: 3px dashed #360258;
+    border: 3px dashed #2b0a41;
     padding:1px;
     }
 .logo{
@@ -53,5 +53,5 @@ img{
 .carousel {
     width:25%;
   }
-  /*
+  
   

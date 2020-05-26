@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+    
+    
+    
+    
+    <form action="" name="formulario" method="GET">
+        <p>Ingrese su nombre:</p>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre..." required> <br><br>
+        <p>Ingrese una palabra:</p>
+        <input type="text" name="palabra" id="palabra" placeholder="Palabra..." required> <br><br>
+        <p>Elija un color:</p>
+        <input type="radio" name="color" id="rojo" value="rojo" required>Rojo
+        <input type="radio" name="color" id="verde" value="verde" required>Verde
+        <input type="radio" name="color" id="amarillo" value="amarillo" required>Amarillo
+        <input type="radio" name="color" id="violeta" value="violeta" required>Violeta
+        <input type="radio" name="color" id="azul" value="azul" required>Azul <br><br>
+        
+
+        <input type="button" id="ok" name="ok" value="Enviar">
+
+
+    </form>
+
+    <h1 id="texto" align=center></h1>
+    <script>
+        
+        document.body.style.backgroundColor = 'rgb(255,255,255)';
+
+        var boton = document.getElementById('ok');
+        var texto = document.getElementById('texto');
+
+        boton.addEventListener('click', capturar);
+        function capturar (){
+            var nombre =document.getElementById('nombre').value;
+            var palabra =document.getElementById('palabra').value;
+            if(formulario.color[0].checked == true || formulario.color[1].checked == true 
+            || formulario.color[2].checked == true || formulario.color[3].checked == true
+            || formulario.color[4].checked == true){
+                color();
+               
+            };
+            texto.innerHTML = nombre + ", la palabra "+ palabra + " tiene "+ palabra.length + " letras.";
+        };
+
+        function color(){
+            if(formulario.color[0].checked == true){
+
+                document.body.style.backgroundColor = 'rgb(217,1,1)';
+
+            } else if(formulario.color[1].checked == true ){
+
+                document.body.style.backgroundColor = 'rgb(11,174,6)';
+
+            } else if(formulario.color[2].checked == true){
+
+                document.body.style.backgroundColor = 'rgb(229,208,6)';
+
+            } else if(formulario.color[3].checked == true){
+
+                document.body.style.backgroundColor = 'rgb(116,26,247)';
+
+            } else if(formulario.color[4].checked == true){
+
+                document.body.style.backgroundColor = 'rgb(13,71,252)';
+
+            };
+        }
+
+        
+
+       
+        
+
+    
+
+
+
+
+    </script>
+
+</body>
+</html>
