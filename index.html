@@ -1,28 +1,98 @@
-<!doctype html> 
-<html lang="es"> 
-<head> 
-    <meta charset="UTF-8" />
-    <title>Heroes de la Gripe</title>
-
-    <script src="//cdn.jsdelivr.net/npm/phaser@3.24.1/dist/phaser.js"></script>
-    <script type="text/javascript" src="Scene1.js"></script>
-    <script type="text/javascript" src="Texto.js"></script>
-    <script type="text/javascript" src="Scene2.js"></script>
-    <script type="text/javascript" src="Scene3.js"></script>
-    <script type= "text/javascript" src="Scene4.js"></script>
-    <script type= "text/javascript" src="Scene5.js"></script>
-    <script type= "text/javascript" src="Scene6.js"></script>
-    <script type= "text/javascript" src="Scene7.js"></script>
-    <script type= "text/javascript" src="Scene8.js"></script>
-    <script type= "text/javascript" src="Scene9.js"></script>
-    <script type= "text/javascript" src="cargapan.js"></script>
-    <script type= "text/javascript" src="Virusclass.js"></script>
-
-
-    <script type="text/javascript" src="game.js"></script>
-
-    </style>
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi información</title>
+    <link rel="stylesheet" type=text/css href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
+    <!-- TÍTULO -->
+    <h1><i><b><a id="arriba">Mi información personal</a></b></i>
+        <img src="./images/UNRaf.png" class="logo" alt="Logo UNRaf" ></h1>
+    <!-- DATOS SOBRE MI --> 
+    <hr width="75%" align="left"> 
+    <img src="./images/perfil.jpeg" class="imgperfil" align=left alt="Imagen de perfil." > <br>
+    <p> <b>   Nombre:  </b>Genaro Nicolás Cravero <br><br>
+     <b>   Fecha de nacimiento: </b>24/08/2000 <br><br>
+     <b>   Edad: </b>19 <br><br>
+     <b>   Lugar de nacimiento: </b>Posadas-Misiones-Argentina </p>
+    <br> <hr width="50%">
+      <!--LINK A los TP's-->
+      <a href="./pages/links.html" target="blank">  Ejercicios Unidad Nº 2</a> <br>
+      <a href="./pages/tutorialphaser/modulo4.html"> Módulo 4</a>
+    <!-- MUSICA, JUEGOS Y PELICULAS-->
+    <h3 align=center><b><i> Sobre mi </i> </b></h3> <p>   Curso una licenciatura en producción de videojuegos y entretenimiento digital en la
+         <a href="https://www.unraf.edu.ar/" target="Blank">UNRaf</a>. <br>
+     Me gustan e interesan los <a href="#juegos"> videojuegos</a>, la <a href="#musica">música</a> y las <a href="#peliculas"> películas.</a> <br> </p>
+    <!--JUEGOS-->
+     <table class="gametable"> <tr><th><b><a id="juegos"> Videojuegos Favoritos:</a> </b></th></tr>  <tr><td>
+         TES: Skyrim <br> <img src="./images/skyrimlogo.gif" class="slogo" alt="skyrim logo" align=left><br><br><br><br><div align=justify>
+            The Elder Scrolls V : Skyrim es un RPG del tipo mundo abierto desarrollado por Bethesda Game Studios. Salió a la venta 
+            el 11 de noviembre del 2011. <br> La historia de Skyrim se centra en los esfuerzos del personaje,
+             dovahkiin, para derrotar a Alduin, un dragón que, según la profecía, destruirá el mundo.</div></td></tr>
+            <tr><td> Final Fantasy XV <br><img src="./images/ffxvlogo.gif" alt="ffxv logo" align=left><br><br><div align=justify>
+            Final Fantasy XV es un videojuego del género ARPG desarrollado por Square Enix. El juego se estrenó
+             el 29 de noviembre de 2016. <br> En la noche de la firma de un tratado de paz entre los reinos de 
+             Lucis y Niflheiml, el emperador de Niflheim utiliza el tratado como una excusa para derribar la barrera mágica de la
+             capital de Lucis y toma el control de la ciudad. Noctis y sus compañeros se enfrentan a diferentes retos para descubrir
+             la verdad y recuperar el trono. </div></td></tr>
+            <tr><td>Ningún juego tiene el tercer puesto concretamente, sino que me gustan varios,
+            la mayoría de ellos son sagas. Como: Devil may cry, Batman arkham, The last of us, entre otros. <br>
+            <img src="./images/dmclogo.gif" alt="logo"> <img src="./images/tloulogo.webp" alt="logo">
+            <img src="./images/relogo.gif" alt="logo"> <img src="./images/megamanlogo.gif" alt="logo">
+            <img src="./images/aclogo.gif" alt="logo"> <img src="./images/batmanlogo.gif" alt="logo"></td></tr>
+     </table>
+     <!--ARTISTAS-->
+     <div align=center><b><h3><a id="musica"> Artistas de interés:</a></h3></b><p><ul><li> La renga <br> <img src="./images/larengalogo.jpg" alt="logo" ></li>
+        <li>SOAD <br><img src="./images/soad.jpg" alt="logo"></li><li>Árbol <br> <img src="./images/arbollogo.jpg" alt="logo"></li>
+        <li>Rata Blanca <br> <img src="./images/rtlogo.jpg" alt="logo"></li><li>Airbag <br><img src="./images/airbaglogo.jpg" alt="logo"></li>
+        <li>Cuarteto de nos <br><img src="./images/cdnlogo.jpg" alt="logo"></li></ul></p></div>
+        <!--PELICULAS/CARRUSEL-->
+     <p><b><a id="peliculas"> Películas:</a></b> Me gusta mucho mirar películas de todo tipo y no puedo seleccionar películas favoritas. Mis géneros de preferencia
+        son las películas de ciencia ficción y fantasía, thrillers y animadas. <br> Algunos ejemplos: <br></p>
+        <!--CARRUSEL-->
+    <div align=center>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" >
+            <div class="carousel-inner" >
+              <div class="carousel-item active">
+                <img src="./images/sw.jpg" class="d-block w-100" alt="Star Wars" >
+              </div>
+              <div class="carousel-item">
+                <img src="./images/ts.jpg" class="d-block w-100" alt="Toy Story">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/meme.jpg" class="d-block w-100" alt="Memento">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/onw.jpeg" class="d-block w-100" alt="Onward">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/br.jpg" class="d-block w-100" alt="Blade Runner">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/inc.jpg" class="d-block w-100" alt="Inception">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <h2 align=right><a href="#arriba">↑↑↑↑↑ </a></h2>   
+<!--SCRIPTS-->
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
